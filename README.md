@@ -14,7 +14,7 @@ The system combines **pre-LLM visual intelligence** with **LLM reasoning and val
 
 ---
 
-# 📁 Project Structure
+## 📁 Project Structure
 ```text
 image_reasoning_assistant/
 ├── README.md                  # Project documentation
@@ -33,8 +33,8 @@ image_reasoning_assistant/
 └── analysis_output_*.json     # Generated analysis outputs
 
 
-## 🚀 Runnable instructions
-### 1. Clone the repository
+### 🚀 Runnable instructions
+1. Clone the repository
 bash
 git clone https://github.com/yourusername/image_reasoning_assistant.git
 cd image_reasoning_assistant
