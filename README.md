@@ -178,8 +178,8 @@ output:
   "detected_objects": ["shoe"],
   "final_verdict": "Suitable for professional e-commerce use",
   "confidence": 0.88
-}
 ...
+}
 Explanation:
 Single product, clean background, high sharpness.
 
@@ -195,8 +195,8 @@ output:
   "detected_objects": ["person", "bed", "phone"],
   "final_verdict": "Not suitable for professional use",
   "confidence": 0.84
-}
 ...
+}
 
 Explanation:
 Presence of people and clutter violates listing standards.
@@ -214,8 +214,8 @@ output:
   "detected_objects": ["bottle"],
   "final_verdict": "Not suitable for professional use",
   "confidence": 0.90
-}
 ...
+}
 
 Explanation:
 Blur significantly reduces visual clarity
