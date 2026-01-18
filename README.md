@@ -33,7 +33,7 @@ image_reasoning_assistant/
 └── analysis_output_*.json     # Generated analysis outputs
 
 ---
-
+```markdown
 🚀 Runnable instructions
 1. Clone the repository
 bash
