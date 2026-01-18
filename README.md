@@ -13,7 +13,6 @@ This project is a **hybrid multimodal AI system** that analyzes product images f
 The system combines **pre-LLM visual intelligence** with **LLM reasoning and validation** to produce reliable, structured decisions suitable for real-world production pipelines.
 
 ## 📁 Project Structure
-```markdown
 ```text
 image_reasoning_assistant/
 ├── README.md                  # Project documentation
