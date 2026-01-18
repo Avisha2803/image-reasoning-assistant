@@ -169,8 +169,8 @@ This design mirrors real-world ML + LLM production systems.
 ### Example 1: Professional Product Image
 Input: ![samples/professional_product.jpg]![professional_product](https://github.com/user-attachments/assets/1973991f-8007-4030-a688-9e4fa7f8f962)
 
-
 output:
+
 {
   "image_quality_score": 0.91,
   "issues_detected": [],
@@ -178,12 +178,15 @@ output:
   "final_verdict": "Suitable for professional e-commerce use",
   "confidence": 0.88
 }
+
 Explanation:
 Single product, clean background, high sharpness.
 
 ### Example 2: Casual Indoor Image
-Input: samples/sample1.jpg
+Input: ![samples/sample1.jpg]![sample1](https://github.com/user-attachments/assets/356c0fc0-6420-4abc-bd6b-748ff8281599)
+
 output:
+
 {
   "image_quality_score": 0.43,
   "issues_detected": ["background clutter", "personal items detected"],
@@ -191,12 +194,15 @@ output:
   "final_verdict": "Not suitable for professional use",
   "confidence": 0.84
 }
+
 Explanation:
 Presence of people and clutter violates listing standards.
 
 ### Example 3: Blurry Image
-Input: samples/blurry_test.jpg
+Input: ![samples/blurry_test.jpg]![blurry_test](https://github.com/user-attachments/assets/5e220195-ab35-47f5-a2e3-c1e4f3e94496)
+
 output:
+
 {
   "image_quality_score": 0.29,
   "issues_detected": ["blur detected"],
@@ -204,7 +210,9 @@ output:
   "final_verdict": "Not suitable for professional use",
   "confidence": 0.90
 }
+
 Explanation:
 Blur significantly reduces visual clarity
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
