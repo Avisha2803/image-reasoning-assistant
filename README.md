@@ -167,7 +167,9 @@ This design mirrors real-world ML + LLM production systems.
 
 ## Sample Outputs
 ### Example 1: Professional Product Image
-Input: samples/professional_product.jpg
+Input: ![samples/professional_product.jpg]![professional_product](https://github.com/user-attachments/assets/1973991f-8007-4030-a688-9e4fa7f8f962)
+
+
 output:
 {
   "image_quality_score": 0.91,
