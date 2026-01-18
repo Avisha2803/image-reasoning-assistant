@@ -166,12 +166,12 @@ This design mirrors real-world ML + LLM production systems.
 
 
 ## Sample Outputs
-```markdown
+
 ### Example 1: Professional Product Image
 **Input Image:** 
-Input: ![samples/professional_product.jpg]![professional_product](https://github.com/user-attachments/assets/1973991f-8007-4030-a688-9e4fa7f8f962)
+![samples/professional_product.jpg]![professional_product](https://github.com/user-attachments/assets/1973991f-8007-4030-a688-9e4fa7f8f962)
 
-output:
+**Output:**
 ```json
 {
   "image_quality_score": 0.91,
@@ -180,14 +180,15 @@ output:
   "final_verdict": "Suitable for professional e-commerce use",
   "confidence": 0.88
 }
+
 Explanation:
 Single product, clean background, high sharpness.
 
 ### Example 2: Casual Indoor Image
-**Input Image:** 
-Input: ![samples/sample1.jpg]![sample1](https://github.com/user-attachments/assets/356c0fc0-6420-4abc-bd6b-748ff8281599)
+**Input Image:**
+![samples/sample1.jpg]![sample1](https://github.com/user-attachments/assets/356c0fc0-6420-4abc-bd6b-748ff8281599)
 
-output:
+**Output:**
 ```json
 {
   "image_quality_score": 0.43,
@@ -201,10 +202,10 @@ Explanation:
 Presence of people and clutter violates listing standards.
 
 ### Example 3: Blurry Image
-**Input Image:** 
-Input: ![samples/blurry_test.jpg]![blurry_test](https://github.com/user-attachments/assets/5e220195-ab35-47f5-a2e3-c1e4f3e94496)
+**Input Image:**
+![samples/blurry_test.jpg]![blurry_test](https://github.com/user-attachments/assets/5e220195-ab35-47f5-a2e3-c1e4f3e94496)
 
-output:
+**Output:**
 ```json
 
 {
