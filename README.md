@@ -166,6 +166,7 @@ This design mirrors real-world ML + LLM production systems.
 
 
 ## Sample Outputs
+```markdown
 ### Example 1: Professional Product Image
 **Input Image:** 
 Input: ![samples/professional_product.jpg]![professional_product](https://github.com/user-attachments/assets/1973991f-8007-4030-a688-9e4fa7f8f962)
@@ -178,7 +179,6 @@ output:
   "detected_objects": ["shoe"],
   "final_verdict": "Suitable for professional e-commerce use",
   "confidence": 0.88
-...
 }
 Explanation:
 Single product, clean background, high sharpness.
@@ -195,7 +195,6 @@ output:
   "detected_objects": ["person", "bed", "phone"],
   "final_verdict": "Not suitable for professional use",
   "confidence": 0.84
-...
 }
 
 Explanation:
@@ -214,7 +213,6 @@ output:
   "detected_objects": ["bottle"],
   "final_verdict": "Not suitable for professional use",
   "confidence": 0.90
-...
 }
 
 Explanation:
