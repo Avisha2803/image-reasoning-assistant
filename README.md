@@ -38,12 +38,12 @@ image_reasoning_assistant/
 ```sh
 git clone https://github.com/yourusername/image_reasoning_assistant.git
 cd image_reasoning_assistant
-```
+ ```
 
 2. Install Python dependencies
-'''bash
+```sh
 pip install -r requirements.txt
-'''
+ ```
 
 3. Install Tesseract OCR
 Windows: Download from:
@@ -54,12 +54,14 @@ Default path: C:\Program Files\Tesseract-OCR\tesseract.exe
 GEMINI_API_KEY=your_gemini_key_here
 
 5. Generate Test Images
+```sh
 python create_test_images.py
-
+ ```
 6. Analyze a Single Image/Run Batch Analysis
+```sh
 python main.py samples/professional_product.jpg
 python test_multiple_images.py
-
+ ```
 ## System Architecture
 
 IMAGE INPUT (JPEG / PNG)
