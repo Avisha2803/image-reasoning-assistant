@@ -196,7 +196,6 @@ Output:
   "final_verdict": "Not suitable for professional use",
   "confidence": 0.84
 }
-
 Explanation:
 Presence of people and clutter violates listing standards.
 
