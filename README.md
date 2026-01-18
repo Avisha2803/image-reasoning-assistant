@@ -32,12 +32,16 @@ image_reasoning_assistant/
 │   └── blurry_test.jpg
 └── analysis_output_*.json     # Generated analysis outputs
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### 🚀 Runnable instructions
+### Installation
+
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+
 1. Clone the repository
 ```sh
 git clone https://github.com/yourusername/image_reasoning_assistant.git
- ```
+```
 
 2. Install Python dependencies
 ```sh
@@ -63,7 +67,9 @@ python create_test_images.py
 python main.py samples/professional_product.jpg
 python test_multiple_images.py
  ```
-### System Architecture
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+System Architecture
 
 IMAGE INPUT (JPEG / PNG)
         │
