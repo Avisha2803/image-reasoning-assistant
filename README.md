@@ -35,7 +35,7 @@ image_reasoning_assistant/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Installation
+## Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
@@ -70,8 +70,8 @@ python test_multiple_images.py
  ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-System Architecture
-
+## System Architecture
+```text
 IMAGE INPUT (JPEG / PNG)
         │
         ▼
@@ -125,6 +125,7 @@ Result Blending
   "processing_time": 1.95,
   "analysis_method": "hybrid"
 }
+```
 
 ## Why This Approach?
 
