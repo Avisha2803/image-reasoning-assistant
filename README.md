@@ -14,7 +14,7 @@ The system combines **pre-LLM visual intelligence** with **LLM reasoning and val
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 ```text
 image_reasoning_assistant/
 ├── README.md                  # Project documentation
