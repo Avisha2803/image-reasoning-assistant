@@ -5,20 +5,20 @@ A mini multimodal system that analyzes an image for e-commerce suitability using
 ## Project Structure
 
 image_reasoning_assistant/
-├── README.md                           # This file
-├── requirements.txt                    # Python dependencies
-├── config.py                           # Configuration settings
-├── feature_extractor.py                # Pre-LLM feature extraction
-├── llm_reasoner.py                     # LLM + rule-based reasoning
-├── main.py                             # Main pipeline orchestrator
-├── create_test_images.py               # Generate test images
-├── test_multiple_images.py             # Batch testing script
-├── .env.example                        # Environment template
-├── samples/                            # Test images directory
-│   ├── professional_product.jpg       # Clean product image
-│   ├── sample1.jpg                    # Casual photo (person + bed)
-│   └── blurry_test.jpg                # Blurry test image
-└── analysis_output_*.json             # Generated analysis files
+├── README.md                    # This documentation
+├── requirements.txt             # Python dependencies
+├── config.py                    # Configuration settings
+├── feature_extractor.py         # Pre-LLM feature extraction
+├── llm_reasoner.py             # LLM + rule-based reasoning
+├── main.py                      # Main pipeline orchestrator
+├── create_test_images.py        # Generate test images
+├── test_multiple_images.py      # Batch testing script
+├── .env.example                 # Environment template
+├── samples/                     # Test images directory
+│   ├── professional_product.jpg # Clean product image
+│   ├── sample1.jpg              # Casual photo (person + bed)
+│   └── blurry_test.jpg          # Blurry test image
+└── analysis_output_*.json       # Generated analysis files
 
 ## 🚀 Quick Start
 
