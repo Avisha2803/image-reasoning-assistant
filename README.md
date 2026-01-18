@@ -12,8 +12,6 @@ This project is a **hybrid multimodal AI system** that analyzes product images f
   
 The system combines **pre-LLM visual intelligence** with **LLM reasoning and validation** to produce reliable, structured decisions suitable for real-world production pipelines.
 
----
-
 ## 📁 Project Structure
 
 ```text
@@ -33,9 +31,7 @@ image_reasoning_assistant/
 │   └── blurry_test.jpg
 └── analysis_output_*.json     # Generated analysis outputs
 
----
-
-🚀 Quick Start
+## Runnable instructions
 
 1. Clone the repository
 git clone https://github.com/yourusername/image_reasoning_assistant.git
@@ -59,7 +55,7 @@ python create_test_images.py
 python main.py samples/professional_product.jpg
 python test_multiple_images.py
 
-🏗️ System Architecture
+## System Architecture
 
 IMAGE INPUT (JPEG / PNG)
         │
@@ -115,7 +111,7 @@ Result Blending
   "analysis_method": "hybrid"
 }
 
-🧠 Why This Approach?
+## Why This Approach?
 
 Pre-LLM feature extraction ensures grounded reasoning
 Hybrid logic reduces hallucinations
@@ -123,7 +119,7 @@ Rule-based fallback guarantees deterministic behavior
 Structured outputs enable automation and auditing
 This design mirrors real-world ML + LLM production systems.
 
-⚠️ Limitations & Future Improvements
+## ⚠️ Limitations & Future Improvements
 
 Current Limitations:
 Object detection may miss fine-grained product attributes
@@ -131,14 +127,14 @@ OCR accuracy drops under severe blur or low lighting
 LLM inference adds latency and API cost
 Fixed rule weights may not generalize across all categories
 
-Future Improvements:
+## Future Improvements:
 Fine-tune detection models on e-commerce datasets
 Replace OCR with vision-language models
 Learn scoring weights from labeled data
 Add multi-image (gallery) analysis
 Human-in-the-loop validation
 
-🚀 Production Deployment Strategy
+## Production Deployment Strategy
 
 To productionize this system:
 Deploy as a FastAPI microservice
@@ -148,11 +144,10 @@ Secure secrets via a secrets manager
 Add monitoring for latency, confidence drift, and failures
 Log all decisions for auditability
 
-🧪 Sample Outputs
-Example 1: Professional Product Image
+## Sample Outputs
+# Example 1: Professional Product Image
 Input: samples/professional_product.jpg
-![professional_product](https://github.com/user-attachments/assets/3baf2b08-31f2-4636-879b-120079685990)
-
+output:
 {
   "image_quality_score": 0.91,
   "issues_detected": [],
@@ -163,10 +158,9 @@ Input: samples/professional_product.jpg
 Explanation:
 Single product, clean background, high sharpness.
 
-Example 2: Casual Indoor Image
+# Example 2: Casual Indoor Image
 Input: samples/sample1.jpg
-![sample1](https://github.com/user-attachments/assets/1e22c95d-6275-498e-9e15-b37f4afb9129)
-
+output:
 {
   "image_quality_score": 0.43,
   "issues_detected": ["background clutter", "personal items detected"],
@@ -177,10 +171,9 @@ Input: samples/sample1.jpg
 Explanation:
 Presence of people and clutter violates listing standards.
 
-Example 3: Blurry Image
+# Example 3: Blurry Image
 Input: samples/blurry_test.jpg
-![blurry_test](https://github.com/user-attachments/assets/b45464ec-2fb7-41a8-918f-977e73f95230)
-
+output:
 {
   "image_quality_score": 0.29,
   "issues_detected": ["blur detected"],
