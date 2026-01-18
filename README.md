@@ -35,10 +35,10 @@ image_reasoning_assistant/
 
 🚀 Runnable instructions
 1. Clone the repository
-'''bash
+```sh
 git clone https://github.com/yourusername/image_reasoning_assistant.git
 cd image_reasoning_assistant
-'''
+```
 
 2. Install Python dependencies
 '''bash
