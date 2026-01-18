@@ -126,8 +126,10 @@ Result Blending
   "analysis_method": "hybrid"
 }
 ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Why This Approach?
+
+### Why This Approach?
 
 Pre-LLM feature extraction ensures grounded reasoning
 Hybrid logic reduces hallucinations
@@ -137,31 +139,34 @@ This design mirrors real-world ML + LLM production systems.
 
 ## ⚠️ Limitations & Future Improvements
 
-Current Limitations:
-Object detection may miss fine-grained product attributes
-OCR accuracy drops under severe blur or low lighting
-LLM inference adds latency and API cost
-Fixed rule weights may not generalize across all categories
+### Current Limitations:
+1. Object detection may miss fine-grained product attributes
+2. OCR accuracy drops under severe blur or low lighting
+3. LLM inference adds latency and API cost
+4. Fixed rule weights may not generalize across all categories
 
-## Future Improvements:
-Fine-tune detection models on e-commerce datasets
-Replace OCR with vision-language models
-Learn scoring weights from labeled data
-Add multi-image (gallery) analysis
-Human-in-the-loop validation
+### Future Improvements:
+1. Fine-tune detection models on e-commerce datasets
+2. Replace OCR with vision-language models
+3. Learn scoring weights from labeled data
+4. Add multi-image (gallery) analysis
+5. Human-in-the-loop validation
 
-## Production Deployment Strategy
+### Production Deployment Strategy
 
-To productionize this system:
-Deploy as a FastAPI microservice
-Use async processing (Celery / Kafka)
-Cache features and LLM responses
-Secure secrets via a secrets manager
-Add monitoring for latency, confidence drift, and failures
-Log all decisions for auditability
+1. To productionize this system:
+2. Deploy as a FastAPI microservice
+3. Use async processing (Celery / Kafka)
+4. Cache features and LLM responses
+5. Secure secrets via a secrets manager
+6. Add monitoring for latency, confidence drift, and failures
+7. Log all decisions for auditability
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## Sample Outputs
-# Example 1: Professional Product Image
+### Example 1: Professional Product Image
 Input: samples/professional_product.jpg
 output:
 {
@@ -174,7 +179,7 @@ output:
 Explanation:
 Single product, clean background, high sharpness.
 
-# Example 2: Casual Indoor Image
+### Example 2: Casual Indoor Image
 Input: samples/sample1.jpg
 output:
 {
@@ -187,7 +192,7 @@ output:
 Explanation:
 Presence of people and clutter violates listing standards.
 
-# Example 3: Blurry Image
+### Example 3: Blurry Image
 Input: samples/blurry_test.jpg
 output:
 {
@@ -199,4 +204,5 @@ output:
 }
 Explanation:
 Blur significantly reduces visual clarity
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
