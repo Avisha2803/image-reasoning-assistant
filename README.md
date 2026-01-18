@@ -38,7 +38,6 @@ image_reasoning_assistant/
 ```sh
 git clone https://github.com/yourusername/image_reasoning_assistant.git
  ```
-cd image_reasoning_assistant
 
 2. Install Python dependencies
 ```sh
