@@ -186,7 +186,7 @@ Single product, clean background, high sharpness.
 
 ### Example 2: Casual Indoor Image
 Input Image:
-![samples/sample1.jpg]![sample1](https://github.com/user-attachments/assets/356c0fc0-6420-4abc-bd6b-748ff8281599)
+[samples/sample1.jpg]![sample1](https://github.com/user-attachments/assets/356c0fc0-6420-4abc-bd6b-748ff8281599)
 
 Output:
 {
@@ -202,7 +202,7 @@ Presence of people and clutter violates listing standards.
 
 ### Example 3: Blurry Image
 Input Image:
-![samples/blurry_test.jpg]![blurry_test](https://github.com/user-attachments/assets/5e220195-ab35-47f5-a2e3-c1e4f3e94496)
+[samples/blurry_test.jpg]![blurry_test](https://github.com/user-attachments/assets/5e220195-ab35-47f5-a2e3-c1e4f3e94496)
 
 Output:
 
