@@ -180,7 +180,7 @@ This design mirrors real-world ML + LLM production systems.
   "final_verdict": "Suitable for professional e-commerce use",
   "confidence": 0.88
 }
-
+```
 Explanation:
 Single product, clean background, high sharpness.
 
