@@ -33,15 +33,17 @@ image_reasoning_assistant/
 └── analysis_output_*.json     # Generated analysis outputs
 
 
-### 🚀 Runnable instructions
+## 🚀 Runnable instructions
 1. Clone the repository
-bash
+'''bash
 git clone https://github.com/yourusername/image_reasoning_assistant.git
 cd image_reasoning_assistant
-
+'''
 
 2. Install Python dependencies
+'''bash
 pip install -r requirements.txt
+'''
 
 3. Install Tesseract OCR
 Windows: Download from:
