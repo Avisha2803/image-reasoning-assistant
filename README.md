@@ -49,11 +49,11 @@ pip install -r requirements.txt
 Windows: Download from:
 👉 https://github.com/UB-Mannheim/tesseract/wiki
 
-Default path: C:\Program Files\Tesseract-OCR\tesseract.exe
 
 5. 🔑 Configuration
-   
+```js 
 GEMINI_API_KEY=your_gemini_key_here
+  ```
 
 7. Generate Test Images
 ```sh
