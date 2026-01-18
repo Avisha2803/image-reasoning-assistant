@@ -189,4 +189,4 @@ Input: samples/blurry_test.jpg
   "confidence": 0.90
 }
 Explanation:
-Blur significantly reduces visual clarity.
+Blur significantly reduces visual clarity
