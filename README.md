@@ -2,29 +2,100 @@
 
 A mini multimodal system that analyzes an image for e-commerce suitability using object detection, OCR, and LLM reasoning.
 
-## Key Design Choices & Trade-offs
+## Project Structure
 
-| Component | Choice | Rationale & Trade-off |
-|-----------|--------|-----------------------|
-| **Object Detection** | YOLO11n (Ultralytics) | **Speed vs. Accuracy:** The nano model offers fast inference with reasonable accuracy for this demo. For production, consider YOLO11s/m for higher precision[reference:7]. |
-| **OCR** | Tesseract (pytesseract) | **Cost vs. Capability:** Free and open-source. Trade-off is lower accuracy on complex fonts/layouts vs. cloud APIs (Google Vision, AWS Textract). |
-| **LLM** | GPT-4o (OpenAI API) | **Reasoning vs. Cost:** GPT-4o provides excellent reasoning and native JSON output. Trade-off is API cost vs. using a smaller local model (e.g., Llama 3.1) which would require more plumbing for structured output[reference:8]. |
-| **Pipeline** | Sequential feature extraction → LLM call | **Simplicity vs. Parallelism:** Easy to debug and explain. For production, parallelize feature extractors and implement caching. |
+image_reasoning_assistant/
+├── README.md                           # This file
+├── requirements.txt                    # Python dependencies
+├── config.py                           # Configuration settings
+├── feature_extractor.py                # Pre-LLM feature extraction
+├── llm_reasoner.py                     # LLM + rule-based reasoning
+├── main.py                             # Main pipeline orchestrator
+├── create_test_images.py               # Generate test images
+├── test_multiple_images.py             # Batch testing script
+├── .env.example                        # Environment template
+├── samples/                            # Test images directory
+│   ├── professional_product.jpg       # Clean product image
+│   ├── sample1.jpg                    # Casual photo (person + bed)
+│   └── blurry_test.jpg                # Blurry test image
+└── analysis_output_*.json             # Generated analysis files
 
-## Running the System
+## 🚀 Quick Start
 
-1. Install dependencies: `pip install -r requirements.txt`
-2. Set your OpenAI API key in a `.env` file: `OPENAI_API_KEY=sk-...`
-3. Run analysis: `python main.py samples/your_image.jpg`
+# 1. Installation
 
-## Sample Output
-```json
+# Clone repository
+git clone <your-repo-url>
+cd image_reasoning_assistant
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Install Tesseract OCR (Windows)
+Download from: https://github.com/UB-Mannheim/tesseract/wiki
+Default path: C:\Program Files\Tesseract-OCR\tesseract.exe
+
+# 2. Configuration
+# Edit .env with your API keys
+OPENAI_API_KEY=your_openai_key_here
+GEMINI_API_KEY=your_gemini_key_here
+
+# 3. Generate Test Images
+python create_test_images.py
+# Creates 3 sample images in 'samples/' folder
+
+# 4. Run Analysis
+# Analyze single image
+python main.py samples/professional_product.jpg
+
+# Run batch tests
+python test_multiple_images.py
+
+## 🔧 System Architecture
+Image Input
+    ↓
+[1] Feature Extraction (Pre-LLM Intelligence)
+    ├── Object Detection (YOLO11n)
+    ├── Text Extraction (Tesseract OCR)
+    └── Blur Analysis (Laplacian Variance)
+    ↓
+[2] Hybrid Reasoning Layer
+    ├── LLM Analysis (Gemini/OpenAI)
+    ├── Rule-Based Validation
+    └── Intelligent Result Blending
+    ↓
+[3] Structured Output (JSON) 
+
+# Key Components
+FeatureExtractor - Extracts 3+ visual features before LLM
+
+LLMReasoner - Hybrid analysis with fallback mechanisms
+
+MultimodalAnalyzer - Orchestrates the complete pipeline
+
+## 🎯 Core Features
+# ✅ Pre-LLM Feature Extraction
+Object Detection: YOLO11n detects 80+ object classes
+
+Text Extraction: Tesseract OCR with preprocessing
+
+Quality Assessment: Blur detection via Laplacian variance
+
+# ✅ Intelligent Reasoning
+LLM Integration: Gemini/OpenAI with structured prompting
+
+Rule-Based Fallback: Comprehensive scoring system
+
+Validation Logic: Cross-checks LLM outputs
+
+# ✅ Structured Output
 {
-  "image_quality_score": 0.78,
-  "issues_detected": ["low lighting", "background clutter"],
+  "image_quality_score": 0.85,
+  "issues_detected": ["background clutter", "poor lighting"],
   "detected_objects": ["shoe", "hand"],
   "text_detected": [],
-  "llm_reasoning_summary": "The image appears informal and lacks a clean background...",
-  "final_verdict": "Not suitable for professional e-commerce use",
+  "llm_reasoning_summary": "The image shows...",
+  "final_verdict": "Suitable for professional e-commerce use",
   "confidence": 0.82
 }
+
