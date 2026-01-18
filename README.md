@@ -186,7 +186,6 @@ Single product, clean background, high sharpness.
 Input: ![samples/sample1.jpg]![sample1](https://github.com/user-attachments/assets/356c0fc0-6420-4abc-bd6b-748ff8281599)
 
 output:
-
 {
   "image_quality_score": 0.43,
   "issues_detected": ["background clutter", "personal items detected"],
@@ -194,6 +193,7 @@ output:
   "final_verdict": "Not suitable for professional use",
   "confidence": 0.84
 }
+
 
 Explanation:
 Presence of people and clutter violates listing standards.
