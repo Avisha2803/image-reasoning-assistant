@@ -113,6 +113,64 @@ python main.py samples/professional_product.jpg
 python test_multiple_images.py
 🏗️ System Architecture
 
+IMAGE INPUT (JPEG / PNG)
+        │
+        ▼
+[1] FEATURE EXTRACTION LAYER (Pre-LLM Intelligence)
+------------------------------------------------
+• Object Detection (YOLO11n – 80+ classes)
+• Text Extraction (Tesseract OCR)
+• Quality Assessment (Laplacian Variance)
+
+        │
+        ▼
+Extracted Features JSON
+------------------------------------------------
+{
+  "detected_objects": [{"object": "person", "confidence": 0.95}],
+  "detected_text": "Product Name v2.0",
+  "blur_score": 0.85,
+  "object_count": 5,
+  "top_objects": ["person", "bed", "phone"]
+}
+
+        │
+        ▼
+[2] HYBRID REASONING LAYER
+------------------------------------------------
+LLM-Based Analysis
+• Structured prompt
+• E-commerce criteria
+• Schema-constrained output
+
+Rule-Based Validation
+• Sharpness (30%)
+• Object Focus (40%)
+• Background Cleanliness (20%)
+• Professionalism (10%)
+
+Result Blending
+• Score validation
+• Issue consistency
+• Confidence estimation
+
+        │
+        ▼
+[3] STRUCTURED OUTPUT
+------------------------------------------------
+{
+  "image_quality_score": 0.78,
+  "issues_detected": ["background clutter", "low lighting"],
+  "detected_objects": ["shoe", "hand"],
+  "text_detected": [],
+  "llm_reasoning_summary": "The image appears informal...",
+  "final_verdict": "Not suitable for professional use",
+  "confidence": 0.82,
+  "processing_time": 1.95,
+  "analysis_method": "hybrid"
+}
+
+
 
 
 
