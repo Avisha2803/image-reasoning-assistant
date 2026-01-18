@@ -31,6 +31,7 @@ image_reasoning_assistant/
 │   ├── sample1.jpg
 │   └── blurry_test.jpg
 └── analysis_output_*.json     # Generated analysis outputs
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
