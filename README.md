@@ -171,21 +171,21 @@ LLMReasoner - Hybrid analysis with fallback mechanisms
 MultimodalAnalyzer - Orchestrates the complete pipeline
 
 ## 🎯 Core Features
-# ✅ Pre-LLM Feature Extraction
+✅ Pre-LLM Feature Extraction
 Object Detection: YOLO11n detects 80+ object classes
 
 Text Extraction: Tesseract OCR with preprocessing
 
 Quality Assessment: Blur detection via Laplacian variance
 
-# ✅ Intelligent Reasoning
+✅ Intelligent Reasoning
 LLM Integration: Gemini/OpenAI with structured prompting
 
 Rule-Based Fallback: Comprehensive scoring system
 
 Validation Logic: Cross-checks LLM outputs
 
-# ✅ Structured Output
+✅ Structured Output
 {
   "image_quality_score": 0.85,
   "issues_detected": ["background clutter", "poor lighting"],
