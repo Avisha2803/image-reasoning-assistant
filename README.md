@@ -12,6 +12,8 @@ This project is a **hybrid multimodal AI system** that analyzes product images f
   
 The system combines **pre-LLM visual intelligence** with **LLM reasoning and validation** to produce reliable, structured decisions suitable for real-world production pipelines.
 
+---
+
 ## 📁 Project Structure
 ```text
 image_reasoning_assistant/
@@ -30,8 +32,7 @@ image_reasoning_assistant/
 │   └── blurry_test.jpg
 └── analysis_output_*.json     # Generated analysis outputs
 
-```markdown
-## Runnable instructions
+🚀 Runnable instructions
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/yourusername/image_reasoning_assistant.git
