@@ -31,8 +31,7 @@ image_reasoning_assistant/
 │   └── blurry_test.jpg
 └── analysis_output_*.json     # Generated analysis outputs
 
-## Runnable instructions
-```text
+# Runnable instructions
 1. Clone the repository
 git clone https://github.com/yourusername/image_reasoning_assistant.git
 cd image_reasoning_assistant
