@@ -32,7 +32,7 @@ image_reasoning_assistant/
 └── analysis_output_*.json     # Generated analysis outputs
 
 ## Runnable instructions
-
+```text
 1. Clone the repository
 git clone https://github.com/yourusername/image_reasoning_assistant.git
 cd image_reasoning_assistant
